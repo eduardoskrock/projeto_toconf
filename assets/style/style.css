@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --color-white: #FFFFFF;
+    --color-principal: #0852C5;
+    --color-gray: #283E59;
+    --color-clean-gray: #949494;
+    --color-gray-secundary: #BBBBBB;
+    --color-background-clear: #e6e6e6;;
+}
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    background: var(--color-principal);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: none;
+    background: var(--color-white);
+    cursor: pointer;
+}
+
+.login-header > a{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    color: var(--color-font);
+}
+
+.login-header:hover{
+    background: var(--color-gray-secundary);
+    color: var(--color-white);
+    transition: .2s;
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.section-forms{
+    padding: 2rem;
+}
+
+.title-section{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--color-gray);
+}
+
+.card-forms{
+    margin-top: 1rem;
+    padding: 1.5rem 1rem;
+    background: var(--color-white);
+    border-radius: 10px;
+    border: 2px solid #D2DDEC;
+    box-shadow: 10px 8px 20px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+label{
+    font-family: 'Poppins';
+    font-size: .9rem;
+    color: var(--color-gray);
+    cursor: pointer;
+}
+
+.row._input-radio{
+    width: 23.5vw;
+}
+
+.input-radio {
+    display: flex;
+  }
+
+.form-check {
+    flex: 1;
+    text-align: center;
+}
+
+.form-check.sim{
+    padding: 0;
+}
+
+.form-check-input{
+    display: none; /* Oculta o input de rádio padrão */
+}
+
+.form-check-label {
+    padding: .5rem;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border: 1px solid var(--color-principal);
+}
+.form-check-label._1{
+    border-radius: 5px 0 0 5px;
+}
+
+.form-check-label._2{
+    border-radius: 0 5px 5px 0;
+}
+/* Estilo quando o input está marcado */
+.form-check-input:checked + .form-check-label {
+    background-color: var(--color-principal);
+    color: var(--color-white);
+    transition: .2s;
+}
+
+.subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--color-gray);
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form._reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.small-input{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.section-forms.filial{
+    display: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.card-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    border-radius: 5px;
+}
+
+.form-texto{
+    color: rgb(73, 73, 73);
+}
+
+.form-control._submit{
+    background: var(--color-principal);
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.information{
+    color: var(--color-gray);
+    font-family: 'Poppins';
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form._login{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+fieldset{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-forms.redes_sociais{
+    padding: 0 2rem;
+}
+
+
+.link_acesso{
+    text-align: center;
+}
+
+ol, ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin-left: 1rem;
+    color: var(--color-white);
+}
+
+#accent-weight{
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.table{
+    margin: 2rem;
+}
+
+article>.table{
+    width: 95%;
+
+}
+
+.align-mid{
+    text-align: center;
+}
+
+.section-card{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.card-body.embreve{
+    background-color: var(--color-background-clear);
+    color: #a3a3a3  ;
+}
+
+.card{
+    width: 30vw;
+}
+@media (max-width: 450px) {
+
+    .logo-desktop{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: block;
+    }
+
+    .login-header{
+        width: 5rem;
+        height: 2rem;
+        font-family: 'Roboto';
+        border-radius: 5px;
+        border: none;
+        background: var(--color-white);
+        cursor: pointer;
+    }
+
+    .login-header > a{
+        font-size: .9rem;
+        color: var(--color-gray);
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .card-forms{
+        padding: 0;
+        background: white;
+        box-shadow: none;
+        border: none;
+    }
+}
